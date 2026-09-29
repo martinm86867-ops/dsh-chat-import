@@ -1,0 +1,13 @@
+{"sessionId":"aaaaaaaa-1111-4222-8333-444444444444","projectHash":"deadbeef","startTime":"2026-09-25T18:28:30.212Z","lastUpdated":"2026-09-25T18:28:30.212Z","kind":"main"}
+{"$set":{"messages":[{"id":"base-0000","timestamp":"2026-09-25T18:28:30.213Z","type":"user","content":[{"text":"<session_context>\nThis is the Gemini CLI. Workspace Directories:\n- /home/tester/proj\n"}]}]}}
+{"id":"u-0001","timestamp":"2026-09-25T18:28:31.294Z","type":"user","content":[{"text":"analyse the current project"}]}
+{"$set":{"lastUpdated":"2026-09-25T18:28:31.294Z"}}
+{"id":"g-0001","timestamp":"2026-09-25T18:28:33.000Z","type":"gemini","content":"","thoughts":[{"subject":"Planning","description":"List files first."}],"tokens":{"input":100,"output":5},"model":"gemini-test-1"}
+{"$set":{"lastUpdated":"2026-09-25T18:28:33.000Z"}}
+{"id":"g-0002","timestamp":"2026-09-25T18:28:34.000Z","type":"gemini","content":"","thoughts":[],"tokens":{"input":100,"output":5},"model":"gemini-test-1","toolCalls":[{"id":"list_dir__call_1","name":"list_directory","args":{"path":"."},"status":"success","result":[{"functionResponse":{"id":"list_dir__call_1","name":"list_directory","response":{"output":"src\nCargo.toml"}}}],"resultDisplay":"src\nCargo.toml"}]}
+{"$set":{"lastUpdated":"2026-09-25T18:28:34.000Z"}}
+{"id":"u-0002","timestamp":"2026-09-25T18:28:34.100Z","type":"user","content":[{"functionResponse":{"id":"list_dir__call_1","name":"list_directory","response":{"output":"src\nCargo.toml"}}}]}
+{"$set":{"lastUpdated":"2026-09-25T18:28:34.100Z"}}
+{"id":"g-0003","timestamp":"2026-09-25T18:28:35.000Z","type":"gemini","content":"Found src and Cargo.toml.","model":"gemini-test-1"}
+{"$set":{"lastUpdated":"2026-09-25T18:28:35.000Z"}}
+{"$set":{"summary":"Analyse project layout","memoryScratchpad":{"version":1}}}
